@@ -1,154 +1,147 @@
 *{
-	margin:0;
-	padding: 0;
-	font-family: 'Barlow', sans-serif;
+	margin:0rem;
+	padding:0rem;
 }
+
 
 html{
-<<<<<<< HEAD
-	color: white;
-
-}
-
-.container{
-	height: 100vh;
-	width: 100%;
-	background-color: #343a40;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.calendar{
-	background-color: #6c757d;
-	width: 50rem;
-	height: 55rem;
-	box-shadow: 0rem 0.5rem 2rem black;
-=======
 	font-family: ocr-a-std, monospace;
 	font-weight: 400;
-	font-style: normal;
-	font-size: 62.5%;
-	font-size: 1.6rem;
+	font-style: normal;	
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+body{
+	background-color: #14DBB4;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
 .header{
-	height:9.1rem;
+	min-width: 100%;
+	padding: 5% 0%;
 	background-color: #DC143C;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 4.1rem;
+	font-size: 41px;
 	color: white;
-	text-shadow: .2rem .2rem .2rem black;
+	text-shadow: 2px 2px 2px black;
+	margin-bottom: 10px;
 }
 
 .content{
-	background-color: #14DBB4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 54.9rem;
+	width: 100%;
+	height: calc(100vh - 101px);
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .calendar{
 	background-color: white;
-	width: 35.1rem;
-	height: 53.5rem;
-	align-items: center;
-	border-radius: 0.5rem;
->>>>>>> parent of d4441fd... Fixed containers
+	width: 350px;
+	height: 535px;
+	border-radius: 5px;
 }
 
-.top{
-	height: 10rem;
-	background-color: #20c997;
+.months{
 	display: flex;
-<<<<<<< HEAD
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	font-size: 2.2rem;
-=======
-	height: 10rem;
+	height: 100px;
 	justify-content: space-around;
 	align-items: center;
+
 }
 
 .curr-month{
-	font-size: 2.2rem;
+	font-size: 22px;
 	text-decoration: underline;
->>>>>>> parent of d4441fd... Fixed containers
 }
 
-.weekdays{
-	background-color: #fff;
-	color: black;
+.day-names
+{
 	display: flex;
 	flex-wrap: wrap;
-<<<<<<< HEAD
-	padding: 1rem;
-	padding-bottom: 0rem;
-=======
 	justify-content: center;
 }
 
 .day-names div{
-	margin-left: 1.3rem;
-	margin-right: 1.3rem;
-	margin-top: 1.5rem;
-	margin-bottom: 2.1rem;
-	width: calc(16.9rem/7);
+	height: calc(321px/6);
+	width: calc(343px/7);
 	text-align: center;
->>>>>>> parent of d4441fd... Fixed containers
-}
-
-.days{
-	background-color: #fff;
-	color: black;
-	display: flex;
-	flex-wrap: wrap;
-	padding: 1rem;
-	padding-top: 0rem;
-}
-
-.weekdays div, .days div{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-<<<<<<< HEAD
-	width: calc(46.4rem/7);
-	height: 7.4rem;
-	border: 0.1rem solid #C0C0C0;
-	transition: background-color 0.2s;
 }
 
-.weekdays div:hover,
-.days div:hover{
-	background-color: #e83e8c;
-	cursor: pointer;
-=======
-	text-align: center;
-	width: calc(35.1rem/7);
-	height: calc(32.1rem/6);
-	text-align: center;
-	transition: background-color 0.2s;
+.days{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.days div:hover{
-	background-color: orange;
-	cursor: pointer;
+.days div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: calc(344px/7);
+	height: calc(324px/6);
+	text-align: center;
 }
 
 .quotes{
-	margin-top: 3.5rem;
+	margin-top: 35px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	width: 100%;
->>>>>>> parent of d4441fd... Fixed containers
 }
 
+@media screen and (max-width:359px) {
+     
+	html{
+		font-size: 90%;
+	}
 
+	.calendar{
+		width: 305px;
+		height: 470px;
+	}
+
+	.months{
+		height: 70px;
+	}
+
+	.months div{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.day-names div{
+		width: calc(305px/7);
+		height: calc(321px/6);
+	}
+
+
+	.days div{
+		width: calc(305px/7);
+		height: calc(324px/6);
+	}
+
+	.quotes{
+		margin-top: 10px;
+
+	}
+ 
+}
