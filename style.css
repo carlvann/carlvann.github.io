@@ -13,15 +13,265 @@ html{
 }
 
 body{
-	background-color: #14DBB4;
+	background-color: #175246;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	height: 100vh;
 }
 
 .header{
 	min-width: 100%;
-	padding: 5% 0%;
+	height: 12%;
+	background-color: #DC143C;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 41px;
+	color: white;
+	text-shadow: 2px 2px 2px black;
+}
+
+.content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 88%;
+}
+
+
+.calendar{
+	background-color: white;
+	width: 95%;
+	height: 98%;
+	border-radius: 5px;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+}
+
+.months{
+	display: flex;
+	height: 10%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.months div{
+	padding: 0px 5px;
+	padding-bottom: 15px;
+}
+
+.curr-month{
+	font-size: 22px;
+	text-decoration: underline;
+}
+
+.prev-month,
+.next-month{
+	font-size: 12px;
+}
+
+.year{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 7%;
+}
+
+.year div{
+	text-align: center;
+}
+
+.day-names
+{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 10%;
+}
+
+.day-names div{
+	height: calc(321px/6);
+	width: calc(100%/7);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}
+
+.days{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	height: 60%;
+}
+
+.days div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: calc(100%/7);
+	height: calc(100%/6);
+	text-align: center;
+}
+
+.quotes{
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	font-size: 12px;
+	height: 13%;
+}
+
+.today{
+	background-color: orange;
+	border-radius: 5px;
+
+}
+
+.pastDays,
+.upcomingDays{
+	color: grey;
+}
+
+.hamburger{
+	position: absolute;
+	top: 110px;
+	left: 0px;
+	z-index: 100;
+	width: 30px;
+	height: 15px;
+	padding: 10px;
+	background-color: orange;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 0px 5px 5px 0px;
+	opacity: 75%;
+	flex-direction: column;
+	transition: margin-left .00000001ms;
+}
+
+.hamburger div{
+	width: 100%;
+	height: 2px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+.side-menu{
+	background-color: #3342FF;
+	position: absolute;
+	left: 0px;
+	top: 12%;
+	width: 0px;
+	height: 88%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.2s linear;
+	font-size: 12px;
+}
+
+.side-menu .close{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	margin-left: -1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: margin-left 0.12s;
+}
+
+.side-menu .close div{
+	height: 2px;
+	background-color: white;
+	width: 50%;
+	transform: rotate(45deg);
+	position: absolute;
+	z-index: 100;
+}
+.side-menu .close .right{
+	transform: rotate(-45deg);
+	z-index: 100;
+	
+}
+
+.side-menu .pic{
+	height: 25%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin-top: 10%;
+	transition: all 0.2s linear;
+}
+
+.side-menu .pic .circle{
+	background-color: gray;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	transition: all 0.2s linear;
+}
+
+.side-menu ul{
+	margin-top: 30px;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	list-style: none;
+	margin-left: -1000px;
+	transition: margin-left 1ms;
+}
+
+.side-menu ul li{
+	margin: 25px 0px;
+	color: white;
+}
+
+
+
+/*
+*{
+	margin:0rem;
+	padding:0rem;
+}
+
+
+html{
+	font-family: ocr-a-std, monospace;
+	font-weight: 400;
+	font-style: normal;	
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+body{
+	background-color: #14DBB4;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+}
+
+.header{
+	min-width: 100%;
+	height: 12%;
 	background-color: #DC143C;
 	display: flex;
 	justify-content: center;
@@ -39,13 +289,9 @@ body{
 	align-items: center;
 	width: 100%;
 	height: calc(100vh - 101px);
+	height: 88%;
 }
 
-.container{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 .calendar{
 	background-color: white;
@@ -241,7 +487,6 @@ body{
 
 
 
-
 @media screen and (max-width:359px) {
      
 	html{
@@ -276,5 +521,7 @@ body{
 	.quotes{
 		display: none;
 	}
- 
 }
+ */
+
+

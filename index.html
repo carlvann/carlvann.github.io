@@ -12,55 +12,54 @@
 		<p class="title">Book Me!</p> 
 	</div>
 	<div class ="content">
-		<div class="container">
-			<div class = "calendar">
-				<div class = "year">
-					<div class = "curr-year"></div>
-				</div>
-				<div class="months">
-					<div class="prev-month"onclick="subMonth()">September</div>
-					<div class="curr-month">October</div>
-					<div class="next-month"onclick="incMonth()">November</div>
-				</div>
+		<div class = "calendar">
+			<div class = "year">
+				<div class = "curr-year"></div>
+			</div>
+			<div class="months">
+				<div class="prev-month"onclick="subMonth()">September</div>
+				<div class="curr-month">October</div>
+				<div class="next-month"onclick="incMonth()">November</div>
+			</div>
+			
+			<div class="day-names">
+				<div>Sun</div>
+				<div>Mon</div>
+				<div>Tue</div>
+				<div>Wed</div>
+				<div>Thu</div>
+				<div>Fri</div>
+				<div>Sat</div>
+			</div>
+			<div class="days">
 				
-				<div class="day-names">
-					<div>Sun</div>
-					<div>Mon</div>
-					<div>Tue</div>
-					<div>Wed</div>
-					<div>Thu</div>
-					<div>Fri</div>
-					<div>Sat</div>
-				</div>
-				<div class="days">
-					
-				</div>
-				<div class="quotes">
-					<p>"The only limit to your impact is your imagination and commitment." <br>-Tony Robbins"</p>
-				</div>
-
 			</div>
-			<div class="hamburger" onclick="toggleOn()" id="toggle">
-				<div class = "hamburger-line"></div>
-				<div class = "hamburger-line"></div>
-				<div class = "hamburger-line"></div>
+			<div class="quotes">
+				<p>"The only limit to your impact is your imagination and commitment." <br>-Tony Robbins"</p>
 			</div>
 
-			<div class = "side-menu" id = 'menu'>
-				<div class = "close" id = 'close' onclick="toggleOff()">
-					<div class="left"></div>
-					<div class="right"></div>
-				</div>
-				<div class="pic">
-					<div class = "circle"></div>
-				</div>
-				<ul id = "list">
-					<li>Profile</li>
-					<li>Appointments</li>
-					<li>Sign Out</li>
-				</ul>
-			</div>
 		</div>
+		<div class="hamburger" onclick="toggleOn()" id="toggle">
+			<div class = "hamburger-line"></div>
+			<div class = "hamburger-line"></div>
+			<div class = "hamburger-line"></div>
+		</div>
+
+		<div class = "side-menu" id = 'menu'>
+			<div class = "close" id = 'close' onclick="toggleOff()">
+				<div class="left"></div>
+				<div class="right"></div>
+			</div>
+			<div class="pic">
+				<div class = "circle"></div>
+			</div>
+			<ul id = "list">
+				<li>Profile</li>
+				<li>Appointments</li>
+				<li>Sign Out</li>
+			</ul>
+		</div>
+		
 	</div>
 
 	<script type="text/javascript" src="script.js"></script>

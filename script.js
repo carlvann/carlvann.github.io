@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleOn(){
 	document.getElementById('menu').style.width = "40%";
 	document.getElementById('list').style.marginLeft = "0px";
-	document.getElementById('close').style.marginLeft = "120px";
+	document.getElementById('close').style.marginLeft = "100px";
 	document.getElementById('toggle').style.marginLeft = "-1000px";
 }
 
