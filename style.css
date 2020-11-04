@@ -8,7 +8,6 @@ html{
 	font-family: ocr-a-std, monospace;
 	font-weight: 400;
 	font-style: normal;	
-	overflow-y: hidden;
 	overflow-x: hidden;
 	height: 100vh;
 }

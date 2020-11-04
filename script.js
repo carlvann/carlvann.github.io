@@ -95,16 +95,3 @@ function toggleOff(){
 	document.getElementById('close').style.marginLeft = "-1000px";
 	document.getElementById('toggle').style.marginLeft = "0px";
 }
-
-
-
-/*Test*/
-
-Rect rectangle = new Rect();
-Window window = getWindow();
-window.getDecorView().getWindowVisibleDisplayFrame(rectangle);
-int statusBarHeight = rectangle.top;
-int contentViewTop = window.findViewById(Window.ID_ANDROID_CONTENT).getTop();
-int titleBarHeight= contentViewTop - statusBarHeight;
-
-Log.i("*** Value :: ", "StatusBar Height= " + statusBarHeight + " , TitleBar Height = " + titleBarHeight);
