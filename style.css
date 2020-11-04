@@ -10,6 +10,7 @@ html{
 	font-style: normal;	
 	overflow-x: hidden;
 	height: 100vh;
+	max-height: 100vh;
 }
 
 body{

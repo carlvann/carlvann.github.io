@@ -95,3 +95,5 @@ function toggleOff(){
 	document.getElementById('close').style.marginLeft = "-1000px";
 	document.getElementById('toggle').style.marginLeft = "0px";
 }
+
+
