@@ -260,6 +260,16 @@ body{
 	color: white;
 }
 
+.padding-top{
+	height: 20px;
+	background-color: black;
+}
+
+.padding-bottom{
+	height: 20px;
+	background-color: black;
+}
+
 
 
 /*
